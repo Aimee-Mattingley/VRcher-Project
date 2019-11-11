@@ -1,10 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class ArrowManagerNew : MonoBehaviour {
+public class ArrowManagerNejc : MonoBehaviour
+{
 
-    public static ArrowManagerNew Instance;
+    public static ArrowManagerNejc Instance;
 
     public SteamVR_TrackedObject trackedObj;
 
@@ -18,40 +18,48 @@ public class ArrowManagerNew : MonoBehaviour {
 
     private bool isAttached = false;
 
-    void Awake() {
+    void Awake()
+    {
         if (Instance == null)
-                Instance = this;
+            Instance = this;
     }
 
-    void OnDestroy() {
+    void OnDestroy()
+    {
         if (Instance == this)
-                Instance = null;
+            Instance = null;
     }
 
-    // Start is called before the first frame update
-    void Start() {
-        
+    // Use this for initialization
+    void Start()
+    {
+
     }
 
-    void Update() {
+
+    void Update()
+    {
         AttachArrow();
         PullString();
     }
 
-    private void PullString() {
-        if (isAttached) {
+    private void PullString()
+    {
+        if (isAttached)
+        {
             float dist = (stringStartPoint.transform.position - trackedObj.transform.position).magnitude;
-            stringAttachPoint.transform.localPosition = stringStartPoint.transform.localPosition + new Vector3 (0f, dist, 0f);
-            
-            var device = SteamVR_Controller.Input((int)trackedObj.index);
-            if (device.GetTouchUp (SteamVR_Controller.ButtonMask.Trigger)) {
-                Fire ();
+            stringAttachPoint.transform.localPosition = stringStartPoint.transform.localPosition + new Vector3(5f * dist, 0f, 0f);
 
+            var device = SteamVR_Controller.Input((int)trackedObj.index);
+            if (device.GetTouchUp(SteamVR_Controller.ButtonMask.Trigger))
+            {
+                Fire();
             }
         }
-}
+    }
 
-    private void Fire() {
+    private void Fire()
+    {
         float dist = (stringStartPoint.transform.position - trackedObj.transform.position).magnitude;
 
         currentArrow.transform.parent = null;
@@ -69,16 +77,20 @@ public class ArrowManagerNew : MonoBehaviour {
         isAttached = false;
     }
 
-    private void AttachArrow() {
-        if (currentArrow == null) {
-            currentArrow = Instantiate (arrowPrefab);
+    private void AttachArrow()
+    {
+        if (currentArrow == null)
+        {
+            currentArrow = Instantiate(arrowPrefab);
             currentArrow.transform.parent = trackedObj.transform;
-            currentArrow.transform.localPosition = new Vector3 (0f, 0f, 0f);
-            currentArrow.transform.localRotation = Quaternion.identity;
+            currentArrow.transform.localPosition = new Vector3(0f, 0f, 0f);
+            currentArrow.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            //currentArrow.transform.localRotation = Quaternion.identity;
         }
     }
 
-    public void AttachBowToArrow() {
+    public void AttachBowToArrow()
+    {
         currentArrow.transform.parent = stringAttachPoint.transform;
         currentArrow.transform.position = arrowStartPoint.transform.position;
         currentArrow.transform.rotation = arrowStartPoint.transform.rotation;
