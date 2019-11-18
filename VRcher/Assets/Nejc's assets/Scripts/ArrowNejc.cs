@@ -12,19 +12,19 @@ public class ArrowNejc : MonoBehaviour
     {
         AttachArrow();
     }
-
+    
     void OnTriggerEnter()
     {
         AttachArrow();
     }
-
+    
     void Update()
     {
-        if (isFired && transform.GetComponent<Rigidbody>().velocity.magnitude > 5f)
+        if (isFired && transform.GetComponent<Rigidbody>().velocity.magnitude > 0f)
         {
             transform.LookAt(transform.position + transform.GetComponent<Rigidbody>().velocity);
         }
-    }
+    } 
 
     public void Fired()
     {
