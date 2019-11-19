@@ -8,6 +8,7 @@ public class ArrowNejc : MonoBehaviour
 
     private bool isFired = false;
 
+
     void OnTriggerStay()
     {
         AttachArrow();
@@ -24,15 +25,18 @@ public class ArrowNejc : MonoBehaviour
         {
             transform.LookAt(transform.position + transform.GetComponent<Rigidbody>().velocity);
         }
+
     }
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == " ") 
-        { 
-            
-        }
+        if (col.gameObject.name == "Cube")
+        {
+            //Destroy(col.gameObject);
+            Rigidbody r = GetComponent<Rigidbody>();
+            r.isKinematic = true;
 
+        }
     }
 
     public void Fired()
