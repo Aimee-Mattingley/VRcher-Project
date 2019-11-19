@@ -50,7 +50,7 @@ public class ArrowManagerNejc : MonoBehaviour
         {
 
             float dist = (stringStartPoint.transform.position - trackedObj.transform.position).magnitude;
-            stringAttachPoint.transform.localPosition = stringStartPoint.transform.localPosition + new Vector3(0f, -0.1f*dist, 0f);
+            stringAttachPoint.transform.localPosition = stringStartPoint.transform.localPosition + new Vector3(0f, -0.07f*dist, 0f);
             
             var device = SteamVR_Controller.Input((int)trackedObj.index);
             if (device.GetTouchUp (SteamVR_Controller.ButtonMask.Trigger))
@@ -68,7 +68,7 @@ public class ArrowManagerNejc : MonoBehaviour
 
         Rigidbody r = currentArrow.GetComponent<Rigidbody>();
 
-        r.velocity = currentArrow.transform.up * 50f * dist;
+        r.velocity = currentArrow.transform.forward * 50f * dist;
         r.useGravity = true;
 
         currentArrow.GetComponent<Collider>().isTrigger = false;
@@ -85,8 +85,7 @@ public class ArrowManagerNejc : MonoBehaviour
             currentArrow = Instantiate(arrowPrefab);
             currentArrow.transform.parent = trackedObj.transform;
             currentArrow.transform.localPosition = new Vector3(0f, 0f, 0f);
-            currentArrow.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
-            //currentArrow.transform.localRotation = Quaternion.identity;
+            currentArrow.transform.localRotation = Quaternion.identity;
         }
     }
 
