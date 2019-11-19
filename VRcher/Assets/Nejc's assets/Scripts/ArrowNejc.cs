@@ -22,7 +22,7 @@ public class ArrowNejc : MonoBehaviour
     {
         if (isFired && transform.GetComponent<Rigidbody>().velocity.magnitude > 0f)
         {
-            transform.LookAt(transform.position + transform.GetComponent<Rigidbody>().velocity);
+            transform.LookAt(transform.position + transform.GetComponent<Rigidbody>().velocity, Vector3.forward);
         }
     } 
 

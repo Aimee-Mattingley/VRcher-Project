@@ -48,14 +48,13 @@ public class ArrowManagerNejc : MonoBehaviour
     {
         if (isAttached)
         {
-            Debug.Log("This is isAttached");
+
             float dist = (stringStartPoint.transform.position - trackedObj.transform.position).magnitude;
             stringAttachPoint.transform.localPosition = stringStartPoint.transform.localPosition + new Vector3(0f, -0.1f*dist, 0f);
             
             var device = SteamVR_Controller.Input((int)trackedObj.index);
             if (device.GetTouchUp (SteamVR_Controller.ButtonMask.Trigger))
             {
-                Debug.Log("This is Fire");
                 Fire();
             }
         }
@@ -65,7 +64,7 @@ public class ArrowManagerNejc : MonoBehaviour
     {
         float dist = (stringStartPoint.transform.position - trackedObj.transform.position).magnitude;
         currentArrow.transform.parent = null;
-        //currentArrow.GetComponent<ArrowNejc>().Fired();
+        currentArrow.GetComponent<ArrowNejc>().Fired();
 
         Rigidbody r = currentArrow.GetComponent<Rigidbody>();
 
