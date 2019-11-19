@@ -24,7 +24,16 @@ public class ArrowNejc : MonoBehaviour
         {
             transform.LookAt(transform.position + transform.GetComponent<Rigidbody>().velocity);
         }
-    } 
+    }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == " ") 
+        { 
+            
+        }
+
+    }
 
     public void Fired()
     {
