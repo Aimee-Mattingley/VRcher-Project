@@ -36,7 +36,7 @@ public class ArrowManagerNejc : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        arrowAudio = GetComponent<audioSource>();
+        arrowAudio = GetComponent<AudioSource>();
     }
 
 
