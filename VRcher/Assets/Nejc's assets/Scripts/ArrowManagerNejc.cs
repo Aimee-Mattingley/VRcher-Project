@@ -5,6 +5,8 @@ using System;
 public class ArrowManagerNejc : MonoBehaviour
 {
 
+    private AudioSource arrowAudio;
+
     public static ArrowManagerNejc Instance;
 
     public SteamVR_TrackedObject trackedObj;
@@ -34,7 +36,7 @@ public class ArrowManagerNejc : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        arrowAudio = GetComponent<audioSource>();
     }
 
 
@@ -76,6 +78,8 @@ public class ArrowManagerNejc : MonoBehaviour
         stringAttachPoint.transform.position = stringStartPoint.transform.position;
         currentArrow = null;
         isAttached = false;
+
+        arrowAudio.Play();
     }
 
     private void AttachArrow()
