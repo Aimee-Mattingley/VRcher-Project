@@ -2,11 +2,12 @@
 
 public class EnemyMovement : MonoBehaviour
 {
+
     public float speed = 10f;
 
     private Transform target;
     private int wavepointIndex = 0;
-
+    private int waypointChooser = 0;
     
     Animator anim;
 
@@ -43,4 +44,5 @@ public class EnemyMovement : MonoBehaviour
         wavepointIndex++;
         target = Waypoints.points[wavepointIndex];
     }
+
 }
