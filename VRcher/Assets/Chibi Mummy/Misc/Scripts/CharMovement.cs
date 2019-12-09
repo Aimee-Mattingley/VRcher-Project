@@ -4,7 +4,11 @@ using System.Collections;
 public class CharMovement : MonoBehaviour 
 {
 
-	public float jumpSpeed = 600.0f;
+    public AudioClip audioHit;
+    public AudioClip audioKill;
+    private AudioSource enemyAudio;
+
+    public float jumpSpeed = 600.0f;
 	public bool grounded = false;
 	public bool doubleJump = false;
 	public Transform groundCheck;
@@ -31,7 +35,8 @@ public class CharMovement : MonoBehaviour
 	}
 	void Start ()
 	{
-		health = 2;
+        enemyAudio = GetComponent<AudioSource>();
+        health = 2;
 		rInt = r.Next(0,3);
         if(rInt == 0){
             target = Waypoints.points[0];
@@ -116,7 +121,11 @@ public class CharMovement : MonoBehaviour
 		health -= 1;
 		if(health <= 0){
 			Destroy(gameObject);
+            enemyAudio.PlayOneShot (audioKill, 0.7f);
 		}
+        else {
+            enemyAudio.PlayOneShot(audioHit, 0.7f);
+        }
 		
 	}
 }
