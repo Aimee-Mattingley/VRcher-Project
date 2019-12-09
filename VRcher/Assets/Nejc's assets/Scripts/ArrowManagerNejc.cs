@@ -5,6 +5,8 @@ using System;
 public class ArrowManagerNejc : MonoBehaviour
 {
 
+    private AudioSource arrowAudio;
+
     public static ArrowManagerNejc Instance;
 
     public SteamVR_TrackedObject trackedObj;
@@ -34,7 +36,7 @@ public class ArrowManagerNejc : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        arrowAudio = GetComponent<audioSource>();
     }
 
 
@@ -76,18 +78,8 @@ public class ArrowManagerNejc : MonoBehaviour
         stringAttachPoint.transform.position = stringStartPoint.transform.position;
         currentArrow = null;
         isAttached = false;
-    }
 
-    private void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.name == "Cube")
-        {
-            Destroy(col.gameObject);
-            Rigidbody r = currentArrow.GetComponent<Rigidbody>();
-            r.isKinematic = true;
-            currentArrow.transform.parent = gameObject.transform;
-            
-        }
+        arrowAudio.Play();
     }
 
     private void AttachArrow()
@@ -110,4 +102,5 @@ public class ArrowManagerNejc : MonoBehaviour
 
         isAttached = true;
     }
+
 }

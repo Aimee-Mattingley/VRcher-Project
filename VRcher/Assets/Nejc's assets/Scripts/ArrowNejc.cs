@@ -30,12 +30,9 @@ public class ArrowNejc : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Cube")
+        if (col.gameObject.tag  == "Enemy")
         {
-            //Destroy(col.gameObject);
-            Rigidbody r = GetComponent<Rigidbody>();
-            r.isKinematic = true;
-
+            col.gameObject.GetComponent<CharMovement>().enemyHit();
         }
     }
 

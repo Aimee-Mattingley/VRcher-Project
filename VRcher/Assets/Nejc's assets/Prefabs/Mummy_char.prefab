@@ -87,6 +87,8 @@ MonoBehaviour:
     m_Bits: 256
   rb: {fileID: 7187527136905972461}
   vSpeed: 0
+  speed: 2
+  rInt: 0
 --- !u!1 &7187527136991613177
 GameObject:
   m_ObjectHideFlags: 0
