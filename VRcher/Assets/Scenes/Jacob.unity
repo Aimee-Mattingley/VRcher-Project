@@ -4207,7 +4207,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 720182715}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc7f9a2df9bb3424da458d54e6d90e13, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f0c4121b9d494d59a4376aa09640f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &720182717
@@ -7788,7 +7788,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1350206230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc7f9a2df9bb3424da458d54e6d90e13, type: 3}
+  m_Script: {fileID: 11500000, guid: e25054b9d73fe42f795ad4078090ce45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1350206232
@@ -8875,22 +8875,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - name: Mummy1
-    enemy: {fileID: 5472065768617870596, guid: ea2eef36345ef4ccb853d4a03b5acd5d, type: 3}
-    count: 5
-    rate: 1
-  - name: Mummy2
+  - name: Wave One
     enemy: {fileID: 5472065768617870596, guid: ea2eef36345ef4ccb853d4a03b5acd5d, type: 3}
     count: 3
-    rate: 1.5
-  - name: Mummy3
+    rate: 1
+  - name: Wave 2
     enemy: {fileID: 5472065768617870596, guid: ea2eef36345ef4ccb853d4a03b5acd5d, type: 3}
     count: 5
     rate: 2
+  - name: Wave 3
+    enemy: {fileID: 5472065768617870596, guid: ea2eef36345ef4ccb853d4a03b5acd5d, type: 3}
+    count: 10
+    rate: 3
   spawnPoints:
   - {fileID: 1144595486}
   - {fileID: 1681702583}
   - {fileID: 843282249}
+  waypoints: []
   timeBetweenWaves: 5
 --- !u!4 &1460460666
 Transform:
