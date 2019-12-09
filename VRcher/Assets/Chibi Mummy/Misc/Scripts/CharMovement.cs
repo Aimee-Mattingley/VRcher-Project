@@ -26,6 +26,7 @@ public class CharMovement : MonoBehaviour
     private System.Random r = new System.Random();
     private int rInt;
 	public int health;
+	public Vector3 impulse = new Vector3(0.0f, 5.0f, 0.0f);
 
 	void Awake()
 	{
@@ -54,6 +55,7 @@ public class CharMovement : MonoBehaviour
 		grounded = Physics.CheckSphere(groundCheck.position, groundRadius, whatIsGround);
 		vSpeed = rb.velocity.y;
         anim.SetFloat ("vSpeed", vSpeed);
+
 	}
 	void Update () 
 	{
@@ -120,8 +122,10 @@ public class CharMovement : MonoBehaviour
 	public void enemyHit(){
 		health -= 1;
 		if(health <= 0){
-			Destroy(gameObject);
-            enemyAudio.PlayOneShot (audioKill, 0.7f);
+			this.GetComponent<Rigidbody>().AddForce(impulse, ForceMode.Impulse);
+			//this.gameObject.SetActive(false);
+			enemyAudio.PlayOneShot (audioKill, 0.7f);
+			//Destroy(gameObject, 3f);
 		}
         else {
             enemyAudio.PlayOneShot(audioHit, 0.7f);
