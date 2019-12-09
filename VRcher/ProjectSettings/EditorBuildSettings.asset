@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/3D WORLD MENU.unity
+    path: Assets/Scenes/MAIN MENU.unity
     guid: 8e4c54c8cee2941769e29c34a0e4f733
   - enabled: 1
-    path: Assets/Scenes/Jacob.unity
-    guid: c701f5d26271d47a191dac9ef2ff8679
+    path: Assets/Scenes/Menu Aimee/Game.unity
+    guid: 4b5bcefc45aaa48f9812c58f9010d45e
+  - enabled: 1
+    path: Assets/Scenes/GAME OVER.unity
+    guid: 3c93be174cb984a3b833b02e668daf4b
   m_configObjects: {}
