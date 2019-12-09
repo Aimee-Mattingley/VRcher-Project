@@ -18,7 +18,6 @@ public class WaveSpawner : MonoBehaviour {
     private int nextWave = 0;
 
     public Transform[] spawnPoints;
-    public Transform[] waypoints;
 
     public float timeBetweenWaves = 5f;
     private float waveCountdown;
@@ -112,13 +111,12 @@ public class WaveSpawner : MonoBehaviour {
         yield break;
     }
 
-    public void SpawnEnemy (Transform _enemy)
+    void SpawnEnemy (Transform _enemy)
     {
         Debug.Log("Spawning Enemy: " + _enemy.name);
 
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
         Instantiate(_enemy, _sp.position, _sp.rotation);
-        Debug.Log("Spawn location: " + _sp);
     }
 
 }
