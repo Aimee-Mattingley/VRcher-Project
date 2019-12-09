@@ -78,21 +78,17 @@ public class ArrowManagerNejc : MonoBehaviour
         isAttached = false;
     }
 
-    /*private void OnCollisionEnter(Collision col)
+    private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Enemy")
+        if (col.gameObject.name == "Cube")
         {
-
-            GameObject anchor = new GameObject("ARROW_ANCHOR");
-            anchor.transform.position = 
-
-            //Destroy(col.gameObject);
+            Destroy(col.gameObject);
             Rigidbody r = currentArrow.GetComponent<Rigidbody>();
-            //r.isKinematic = true;
+            r.isKinematic = true;
             currentArrow.transform.parent = gameObject.transform;
             
         }
-    }*/
+    }
 
     private void AttachArrow()
     {
