@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     void GameOver ()
 
     {
-        Debug.log("GameOver");
+        Debug.Log("GameOver");
 
     }
 }
