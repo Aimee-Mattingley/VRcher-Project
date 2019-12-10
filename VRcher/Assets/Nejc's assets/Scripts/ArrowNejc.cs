@@ -8,7 +8,6 @@ public class ArrowNejc : MonoBehaviour
 
     private bool isFired = false;
 
-
     void OnTriggerStay()
     {
         AttachArrow();
@@ -34,6 +33,7 @@ public class ArrowNejc : MonoBehaviour
         {
             col.gameObject.GetComponent<CharMovement>().enemyHit();
         }
+        StartCoroutine(WaitAndDestroy());
     }
 
     public void Fired()
@@ -49,6 +49,11 @@ public class ArrowNejc : MonoBehaviour
             ArrowManagerNejc.Instance.AttachBowToArrow();
             isAttached = true;
         }
+    }
+
+    IEnumerator WaitAndDestroy(){
+        yield return new WaitForSeconds(1);
+        Destroy (this.gameObject);
     }
 
 }

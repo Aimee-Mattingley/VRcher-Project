@@ -21,10 +21,14 @@ public class ArrowManagerNejc : MonoBehaviour
 
     private bool isAttached = false;
 
+    private bool gameOver = false;
+
     void Awake()
     {
-        if (Instance == null)
-            Instance = this;
+        if(!gameOver){
+            if (Instance == null)
+                Instance = this;
+        }
     }
 
     void OnDestroy()
@@ -42,8 +46,10 @@ public class ArrowManagerNejc : MonoBehaviour
 
     void Update()
     {
-        AttachArrow();
-        PullString();
+        if(!gameOver){
+            AttachArrow();
+            PullString();
+        }
     }
     
     private void PullString()
@@ -101,6 +107,9 @@ public class ArrowManagerNejc : MonoBehaviour
         currentArrow.transform.rotation = arrowStartPoint.transform.rotation;
 
         isAttached = true;
+    }
+    public void gameIsOver(){
+        gameOver = true;
     }
 
 }

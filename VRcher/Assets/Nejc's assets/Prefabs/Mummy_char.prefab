@@ -77,6 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d2e188784ab2e419ea4ec78b7bc684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioHit: {fileID: 8300000, guid: cb071d4022b844750932284b9c519eb6, type: 3}
+  tower: {fileID: 6195023780160976276, guid: 6c1ac17037ffe5b45aec8b3ff4634e5f, type: 3}
   jumpSpeed: 4.5
   grounded: 0
   doubleJump: 0
@@ -88,7 +90,8 @@ MonoBehaviour:
   rb: {fileID: 7187527136905972461}
   vSpeed: 0
   speed: 2
-  rInt: 0
+  health: 0
+  impulse: {x: 0, y: 50, z: 0}
 --- !u!1 &7187527136991613177
 GameObject:
   m_ObjectHideFlags: 0
