@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 6195023780160976274}
   - component: {fileID: 6195023780160976277}
   - component: {fileID: 6195023780160976275}
-  - component: {fileID: 6195023780160976273}
-  - component: {fileID: 6195023780160976272}
   - component: {fileID: 6195023780160976286}
   m_Layer: 0
   m_Name: Tower
@@ -53,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameMaster: {fileID: 6496891944469905070, guid: 0f08903bc160a044d918383cb27bca0a,
     type: 3}
-  audioKill: {fileID: 8300000, guid: 933809f53d4b44765a312d64b49fcd6e, type: 3}
+  rb: {fileID: 0}
 --- !u!65 &6195023780160976275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67,32 +65,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.57, y: 3.16, z: 1.5}
   m_Center: {x: 17.72, y: 1.2, z: 13.26}
---- !u!65 &6195023780160976273
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6195023780160976276}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.96, y: 3.16, z: 1.5}
-  m_Center: {x: 9.15, y: 1.2, z: 13.7}
---- !u!65 &6195023780160976272
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6195023780160976276}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.96, y: 3.16, z: 1.5}
-  m_Center: {x: 26.05, y: 1.2, z: 13.7}
 --- !u!82 &6195023780160976286
 AudioSource:
   m_ObjectHideFlags: 0

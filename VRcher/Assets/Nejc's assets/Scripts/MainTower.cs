@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class MainTower : MonoBehaviour
 {
-    Collider m_ObjectCollider;
     private AudioSource GameOverAudio;
+    
     public GameObject GameMaster;
     private int towerHealth;
-    // Start is called before the first frame update
+    
+    public Rigidbody rb;
+
     void Start()
     {
-        towerHealth = 4;
+        towerHealth = 2;
         GameOverAudio = GetComponent<AudioSource>();
     }
 
@@ -20,8 +22,7 @@ public class MainTower : MonoBehaviour
     {
         if(towerHealth <= 0){
             GameMaster.GetComponent<GameManagerMain>().towerDead();
-            m_ObjectCollider.isTrigger = true;
-            GameOverAudio.Play();
+            rb.detectCollisions = false;
         }
         Debug.Log(towerHealth);
     }

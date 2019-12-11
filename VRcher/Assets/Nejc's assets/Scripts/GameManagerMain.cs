@@ -32,16 +32,26 @@ public class GameManagerMain : MonoBehaviour {
     public GameObject controllerRight;
     public GameObject model;
     private bool towerDefeated;
-    public AudioSource[] sounds;
+    private bool gameIsOver;
+    AudioSource[] sounds;
     public AudioSource music;
     public AudioSource gameComplete;
-
+    public AudioSource gameOverAudio;
+    public AudioSource waveCompletedAudio;
+    public AudioClip musicClip;
+    public AudioClip gameCompleteClip;
+    public AudioClip gameOverClip;
+    public AudioClip waveCompletedClip;
 
     void Start()
     {
         sounds = GetComponents<AudioSource>();
         music = sounds[0];
         gameComplete = sounds[1];
+        gameOverAudio = sounds[2];
+        waveCompletedAudio = sounds[3];
+
+        gameIsOver = false;
 
         gameOverCanvas.SetActive(false);
         gameCompleteCanvas.SetActive(false);
@@ -81,7 +91,7 @@ public class GameManagerMain : MonoBehaviour {
                 waveCountdown -= Time.deltaTime;
             }
         }
-        else{
+        else if(towerDefeated && !gameIsOver){
             gameOver();
         }
 
@@ -90,14 +100,13 @@ public class GameManagerMain : MonoBehaviour {
     void WaveCompleted()
     {
         Debug.Log("Wave Completed!");
-
+        waveCompletedAudio.PlayOneShot(waveCompletedClip, 1F);
         state = SpawnState.Counting;
         waveCountdown = timeBetweenWaves;
 
         if (nextWave + 1 > waves.Length - 1)
         {
             GameComplete();
-            gameComplete.Play();
         }
         else
         {
@@ -156,28 +165,30 @@ public class GameManagerMain : MonoBehaviour {
 
     private void gameOver(){
         Debug.Log("GAME OVER!!!");
+        gameOverAudio.PlayOneShot(gameOverClip, 1F);
         gameOverCanvas.SetActive(true);
         Time.timeScale = 0f;
-        GameObject woodenBow = controllerLeft.transform.GetChild (1).gameObject;
-        GameObject arrow = controllerRight.transform.GetChild (1).gameObject;
-        woodenBow.SetActive(false);
+
+        controllerLeft.SetActive(false);
         model.SetActive(true);
+        GameObject arrow = controllerRight.transform.GetChild (0).gameObject;
         arrow.SetActive(false);
-        controllerRight.GetComponent<ArrowManagerNejc>().gameIsOver();
+
+        gameIsOver = true;
+
     }
     public void towerDead(){
         towerDefeated = true;
     }
 
     private void GameComplete(){
-        gameCompleteCanvas.SetActive(true);
+        gameOverCanvas.SetActive(true);
         Time.timeScale = 0f;
-        GameObject woodenBow = controllerLeft.transform.GetChild (1).gameObject;
-        GameObject arrow = controllerRight.transform.GetChild (1).gameObject;
-        woodenBow.SetActive(false);
+        gameComplete.PlayOneShot(gameCompleteClip, 1F);
+        controllerLeft.SetActive(false);
         model.SetActive(true);
+        GameObject arrow = controllerRight.transform.GetChild (0).gameObject;
         arrow.SetActive(false);
-        controllerRight.GetComponent<ArrowManagerNejc>().gameIsOver();
     }
 
 }

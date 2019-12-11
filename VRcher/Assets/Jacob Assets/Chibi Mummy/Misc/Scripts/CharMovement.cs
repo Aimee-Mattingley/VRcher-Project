@@ -3,13 +3,10 @@ using System.Collections;
 
 public class CharMovement : MonoBehaviour 
 {
-
-    public AudioClip audioHit;
-    private AudioSource enemyAudio;
+    private AudioSource enemyHitAudio;
 
     public float jumpSpeed = 600.0f;
 	public bool grounded = false;
-	public bool doubleJump = false;
 	public Transform groundCheck;
 	public float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
@@ -35,7 +32,7 @@ public class CharMovement : MonoBehaviour
 	}
 	void Start ()
 	{
-        enemyAudio = GetComponent<AudioSource>();
+        enemyHitAudio = GetComponent<AudioSource>();
         health = 2;
 		rInt = r.Next(0,3);
         if(rInt == 0){
@@ -123,7 +120,7 @@ public class CharMovement : MonoBehaviour
 
 	public void enemyHit(){
 		health -= 1;
-		enemyAudio.PlayOneShot(audioHit, 0.7f);
+		enemyHitAudio.Play();
 	}
     
 }
