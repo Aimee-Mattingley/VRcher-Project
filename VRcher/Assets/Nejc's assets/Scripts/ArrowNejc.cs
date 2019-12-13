@@ -8,7 +8,12 @@ public class ArrowNejc : MonoBehaviour
 
     private bool isFired = false;
 
-
+    public Rigidbody rb;
+    
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
     void OnTriggerStay()
     {
         AttachArrow();
@@ -34,6 +39,13 @@ public class ArrowNejc : MonoBehaviour
         {
             col.gameObject.GetComponent<CharMovement>().enemyHit();
         }
+        if (col.gameObject.tag  == "Enemy" || col.gameObject.tag  == "pyramid" )
+        {
+            rb.isKinematic = true;
+        }
+        
+        
+        StartCoroutine(WaitAndDestroy());
     }
 
     public void Fired()
@@ -49,6 +61,11 @@ public class ArrowNejc : MonoBehaviour
             ArrowManagerNejc.Instance.AttachBowToArrow();
             isAttached = true;
         }
+    }
+
+    IEnumerator WaitAndDestroy(){
+        yield return new WaitForSeconds(1);
+        Destroy (this.gameObject);
     }
 
 }

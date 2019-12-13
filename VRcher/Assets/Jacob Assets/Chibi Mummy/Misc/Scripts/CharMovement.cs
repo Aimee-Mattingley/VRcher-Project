@@ -3,14 +3,10 @@ using System.Collections;
 
 public class CharMovement : MonoBehaviour 
 {
-
-    public AudioClip audioHit;
-    public AudioClip audioKill;
-    private AudioSource enemyAudio;
+    private AudioSource enemyHitAudio;
 
     public float jumpSpeed = 600.0f;
 	public bool grounded = false;
-	public bool doubleJump = false;
 	public Transform groundCheck;
 	public float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
@@ -26,7 +22,7 @@ public class CharMovement : MonoBehaviour
     private System.Random r = new System.Random();
     private int rInt;
 	public int health;
-	public Vector3 impulse = new Vector3(0.0f, 5.0f, 0.0f);
+	public Vector3 impulse = new Vector3(0.0f, 5000.0f, 0.0f);
 
 	void Awake()
 	{
@@ -36,7 +32,7 @@ public class CharMovement : MonoBehaviour
 	}
 	void Start ()
 	{
-        enemyAudio = GetComponent<AudioSource>();
+        enemyHitAudio = GetComponent<AudioSource>();
         health = 2;
 		rInt = r.Next(0,3);
         if(rInt == 0){
@@ -58,22 +54,25 @@ public class CharMovement : MonoBehaviour
 
 	}
 	void Update () 
-	{
-		Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
-    
-        if(Vector3.Distance(transform.position, target.position) <= 0.4f)
-        {
-            if(rInt == 0){GetNextWaypoint();}
-            else if (rInt == 1){GetNextLeftWaypoint();}
-            else if (rInt == 2){GetNextRightWaypoint();}
+	{   
+        if(health > 0){
+            Vector3 dir = target.position - transform.position;
+            transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+        
+            if(Vector3.Distance(transform.position, target.position) <= 0.4f)
+            {
+                if(rInt == 0){GetNextWaypoint();}
+                else if (rInt == 1){GetNextLeftWaypoint();}
+                else if (rInt == 2){GetNextRightWaypoint();}
+            }
         }
-		
-		/*if (Input.GetKeyDown("space") && anim.GetBool("isIdle"))
-		{
-			Jump();
+        else{
+			this.GetComponent<Rigidbody>().AddForce(impulse, ForceMode.Impulse);
+			//this.gameObject.SetActive(false);
+			//tower.GetComponent<MainTower>().PlayAudio();
+			Destroy(gameObject, 1f);
 		}
-		*/
+
 	}
 
 	public void Jump ()
@@ -121,15 +120,7 @@ public class CharMovement : MonoBehaviour
 
 	public void enemyHit(){
 		health -= 1;
-		if(health <= 0){
-			this.GetComponent<Rigidbody>().AddForce(impulse, ForceMode.Impulse);
-			//this.gameObject.SetActive(false);
-			enemyAudio.PlayOneShot (audioKill, 0.7f);
-			//Destroy(gameObject, 3f);
-		}
-        else {
-            enemyAudio.PlayOneShot(audioHit, 0.7f);
-        }
-		
+		enemyHitAudio.Play();
 	}
+    
 }
