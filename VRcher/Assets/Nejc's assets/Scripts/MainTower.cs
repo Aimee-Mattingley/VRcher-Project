@@ -13,7 +13,7 @@ public class MainTower : MonoBehaviour
 
     void Start()
     {
-        towerHealth = 2;
+        towerHealth = 8;
         GameOverAudio = GetComponent<AudioSource>();
     }
 

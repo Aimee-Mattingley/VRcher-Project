@@ -182,7 +182,7 @@ public class GameManagerMain : MonoBehaviour {
     }
 
     private void GameComplete(){
-        gameOverCanvas.SetActive(true);
+        gameCompleteCanvas.SetActive(true);
         Time.timeScale = 0f;
         gameComplete.PlayOneShot(gameCompleteClip, 1F);
         controllerLeft.SetActive(false);

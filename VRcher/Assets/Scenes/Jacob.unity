@@ -334,6 +334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pyramid_Thin_Tip (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014058142462, guid: ab440feedacbd0d40aaac5abd4acd8fd, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010945598816, guid: ab440feedacbd0d40aaac5abd4acd8fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.886923
@@ -573,169 +577,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &68562848
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 24
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: 0.01, z: 0}
-      m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 288
-    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0.01, z: 0}
-    m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &68976847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2286858757045428877, guid: d3e71966d7f983244b3b6a0e429b34dc,
@@ -819,6 +660,10 @@ PrefabInstance:
     - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_Name
       value: PyramidStepsUpperHalf (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4000014065311354, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1164,7 +1009,7 @@ GameObject:
   - component: {fileID: 129074579}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: pyramid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1258,40 +1103,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.981458, y: 4.14101, z: 5.9814577}
   m_Center: {x: 0, y: 2.0705054, z: 0.00000059604645}
---- !u!21 &139562025
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &156203316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011285132168, guid: b324ebca6c0fde34a993f348c9a1c464,
@@ -1455,6 +1266,10 @@ PrefabInstance:
     - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_Name
       value: PyramidStepsUpperHalf
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4000014065311354, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1664,6 +1479,169 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1642841090}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &277026680
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &290924986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2217,7 +2195,7 @@ GameObject:
   - component: {fileID: 336325495}
   m_Layer: 0
   m_Name: PyramidsSmall
-  m_TagString: Untagged
+  m_TagString: pyramid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2393,6 +2371,10 @@ PrefabInstance:
     - target: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
       propertyPath: m_Name
       value: Palm_Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
       objectReference: {fileID: 0}
     - target: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2762,10 +2744,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 336325495}
     m_Modifications:
-    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
-      propertyPath: m_Name
-      value: Desert_Pyramid_Small (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012622637596, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.387267
@@ -2822,6 +2800,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
+      propertyPath: m_Name
+      value: Desert_Pyramid_Small (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
 --- !u!4 &357969971 stripped
@@ -2840,6 +2822,10 @@ PrefabInstance:
     - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_Name
       value: PyramidStepsUpperHalf (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4000014065311354, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3303,6 +3289,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[CameraRig]'
       objectReference: {fileID: 0}
+    - target: {fileID: 2286858757045428877, guid: d3e71966d7f983244b3b6a0e429b34dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2286858757045206801, guid: d3e71966d7f983244b3b6a0e429b34dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3362,23 +3353,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 139562025}
+      objectReference: {fileID: 1339524468}
     - target: {fileID: 2286858757044323787, guid: d3e71966d7f983244b3b6a0e429b34dc,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 68562848}
+      objectReference: {fileID: 277026680}
     - target: {fileID: 2286302578372548304, guid: d3e71966d7f983244b3b6a0e429b34dc,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2286858757045480917, guid: d3e71966d7f983244b3b6a0e429b34dc,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2286858757045428877, guid: d3e71966d7f983244b3b6a0e429b34dc,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3472,10 +3458,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 336325495}
     m_Modifications:
-    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
-      propertyPath: m_Name
-      value: Desert_Pyramid_Small (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012622637596, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.087403
@@ -3531,6 +3513,10 @@ PrefabInstance:
     - target: {fileID: 4000012622637596, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
+      propertyPath: m_Name
+      value: Desert_Pyramid_Small (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
@@ -3853,6 +3839,10 @@ PrefabInstance:
     - target: {fileID: 1000010390738104, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
       propertyPath: m_Name
       value: Desert_Obelisk_Stand (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010390738104, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
       objectReference: {fileID: 0}
     - target: {fileID: 4000012333492518, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4432,6 +4422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PyramidStepsUpperHalf (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4000014065311354, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.2
@@ -5001,6 +4995,10 @@ PrefabInstance:
     - target: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
       propertyPath: m_Name
       value: Palm_Tree (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
       objectReference: {fileID: 0}
     - target: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5604,6 +5602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PyramidStepsUpperHalf (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4000014065311354, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.953075
@@ -6144,10 +6146,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 336325495}
     m_Modifications:
-    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
-      propertyPath: m_Name
-      value: Desert_Pyramid_Small (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012622637596, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.2499628
@@ -6203,6 +6201,10 @@ PrefabInstance:
     - target: {fileID: 4000012622637596, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
+      propertyPath: m_Name
+      value: Desert_Pyramid_Small (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
@@ -6792,7 +6794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &977055367
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6918,10 +6920,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 336325495}
     m_Modifications:
-    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
-      propertyPath: m_Name
-      value: Desert_Pyramid_Small (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012622637596, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.8841083
@@ -6977,6 +6975,10 @@ PrefabInstance:
     - target: {fileID: 4000012622637596, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
+      propertyPath: m_Name
+      value: Desert_Pyramid_Small (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
@@ -7791,6 +7793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palm_Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
+      objectReference: {fileID: 0}
     - target: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0206642
@@ -8008,7 +8014,7 @@ GameObject:
   - component: {fileID: 1171789382}
   m_Layer: 0
   m_Name: PalmTrees
-  m_TagString: Untagged
+  m_TagString: pyramid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8155,6 +8161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desert_Slab
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012046549718, guid: e59189dc53391154ba8d5468f263e319, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012447238448, guid: e59189dc53391154ba8d5468f263e319, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.48
@@ -8292,6 +8302,10 @@ PrefabInstance:
     - target: {fileID: 1000012128009412, guid: b667959c85aac0840abd65af9a3e1517, type: 3}
       propertyPath: m_Name
       value: Desert_Temple_SegmentSingle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012128009412, guid: b667959c85aac0840abd65af9a3e1517, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
       objectReference: {fileID: 0}
     - target: {fileID: 4000013496182864, guid: b667959c85aac0840abd65af9a3e1517, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8760,6 +8774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pyramid_Thin_Tip (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014058142462, guid: ab440feedacbd0d40aaac5abd4acd8fd, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010945598816, guid: ab440feedacbd0d40aaac5abd4acd8fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.123074
@@ -8899,6 +8917,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1334265375}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1339524468
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1350206230
 GameObject:
   m_ObjectHideFlags: 0
@@ -9600,7 +9652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1409831110
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10301,7 +10353,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -11507,10 +11559,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 336325495}
     m_Modifications:
-    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
-      propertyPath: m_Name
-      value: Desert_Pyramid_Small (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012622637596, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.020414
@@ -11566,6 +11614,10 @@ PrefabInstance:
     - target: {fileID: 4000012622637596, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014225362746, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
+      propertyPath: m_Name
+      value: Desert_Pyramid_Small (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41a0379b3d57cd47984f898fd2c7059, type: 3}
@@ -12588,6 +12640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palm_Tree (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
+      objectReference: {fileID: 0}
     - target: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.040000916
@@ -12725,6 +12781,10 @@ PrefabInstance:
     - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_Name
       value: PyramidStepsUpperHalf (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4000014065311354, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13412,7 +13472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1888211416
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13811,6 +13871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desert_Obelisk_Stand
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010390738104, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012333492518, guid: 09c2ce84a75b3324fb5c689e5ac6ce7e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.283077
@@ -14093,7 +14157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1919710218
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14861,6 +14925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pyramid_Thin_Tip
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014058142462, guid: ab440feedacbd0d40aaac5abd4acd8fd, type: 3}
+      propertyPath: m_TagString
+      value: pyramid
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010945598816, guid: ab440feedacbd0d40aaac5abd4acd8fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.623074
@@ -15323,6 +15391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PyramidStepsUpperHalf (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010736078000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4000014065311354, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.453075
@@ -15466,6 +15538,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameMaster
       objectReference: {fileID: 0}
+    - target: {fileID: 6496891944469905070, guid: 0f08903bc160a044d918383cb27bca0a,
+        type: 3}
+      propertyPath: m_TagString
+      value: pyramid
+      objectReference: {fileID: 0}
     - target: {fileID: 6496891944469905068, guid: 0f08903bc160a044d918383cb27bca0a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15606,5 +15683,15 @@ PrefabInstance:
       propertyPath: waveCompletedClip
       value: 
       objectReference: {fileID: 8300000, guid: a7769bdafccc23841bb9e22acee4afbb, type: 3}
+    - target: {fileID: 6496891944469905069, guid: 0f08903bc160a044d918383cb27bca0a,
+        type: 3}
+      propertyPath: waves.Array.data[2].count
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496891944469905069, guid: 0f08903bc160a044d918383cb27bca0a,
+        type: 3}
+      propertyPath: waveCompletedAudio
+      value: 
+      objectReference: {fileID: 1460460666}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f08903bc160a044d918383cb27bca0a, type: 3}

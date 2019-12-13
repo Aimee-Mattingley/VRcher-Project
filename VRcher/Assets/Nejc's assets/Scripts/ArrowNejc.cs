@@ -39,8 +39,12 @@ public class ArrowNejc : MonoBehaviour
         {
             col.gameObject.GetComponent<CharMovement>().enemyHit();
         }
+        if (col.gameObject.tag  == "Enemy" || col.gameObject.tag  == "pyramid" )
+        {
+            rb.isKinematic = true;
+        }
         
-        rb.isKinematic = true;
+        
         StartCoroutine(WaitAndDestroy());
     }
 
